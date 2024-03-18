@@ -133,6 +133,12 @@ header {
 }
 
 @media print {
+    #logo {
+        animation: unset;
+    }
+    main:before {
+        animation: unset;
+    }
     body {
         font-family: Arial, Helvetica;
         background-image: unset;
