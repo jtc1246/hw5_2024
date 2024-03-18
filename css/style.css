@@ -131,3 +131,36 @@ header {
         animation: unset;
     }
 }
+
+@media print {
+    body {
+        font-family: Arial, Helvetica;
+        background-image: unset;
+    }
+    header > nav {
+        width: 100%;
+    }
+    .nav_links {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .card {
+        flex-basis: 325px;
+        border: solid 2px #45ADDD;
+        flex-grow: unset;
+    }
+    .pricing {
+        flex-flow: nowrap;
+        align-items: flex-end;
+    }
+    .gallery {
+        display: none;
+    }
+    #gallery {
+        display: none;
+    }
+    .card > ul > li:nth-child(2):after {
+        content: "👍";
+    }
+}
