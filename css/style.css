@@ -122,3 +122,12 @@ header {
         animation: hh 5s;
     }
 }
+
+@media (prefers-reduced-motion) {
+    #logo {
+        animation: unset;
+    }
+    main:before {
+        animation: unset;
+    }
+}
